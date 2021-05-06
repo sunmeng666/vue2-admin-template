@@ -1,0 +1,34 @@
+@import '~ant-design-vue/dist/antd.less';
+@import './reset.less';
+@import './antd-reset.less';
+@import './theme.less';
+
+// Text Colors
+
+// Background Colors
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+// Table operations styles
+.global-table-divider {
+  white-space: nowrap;
+  > * {
+    display: inline-block;
+    white-space: nowrap;
+    &:after {
+      content: '';
+      position: relative;
+      top: -0.05em;
+      display: inline-block;
+      vertical-align: middle;
+      height: 0.9em;
+      width: 1px;
+      background: #70788C;
+      margin: 0 8px;
+    }
+  }
+  :last-child:after {
+    display: none;
+  }
+}

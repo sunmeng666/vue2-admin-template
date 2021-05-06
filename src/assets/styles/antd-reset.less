@@ -1,0 +1,131 @@
+// Layout
+.ant-layout{
+  &.sidemenu{
+    transition: all .12s linear
+  }
+}
+
+// Descriptions
+.ant-descriptions-row{
+  display:flex;
+}
+.ant-descriptions{
+  margin-bottom: -16px;
+  &[contentFill="true"]{
+    margin-bottom: 0;
+    .ant-descriptions-view{
+      padding:16px 24px 0;
+      
+      background:@black-light;
+    }
+  }
+}
+
+.ant-descriptions-item{
+  display:flex;
+  flex:1;
+  > span{
+    vertical-align: top;
+  }
+  .ant-descriptions-item-label {
+    white-space: nowrap;
+  }
+  .ant-descriptions-item-content{
+    word-break: break-all;
+    flex:1
+  }
+}
+
+// Progress
+.ant-progress-line{
+  >div{
+    display:flex;
+    align-items: center;
+    .ant-progress-outer{
+      margin:0;
+      padding: 0;
+      flex:1;
+    }
+    .ant-progress-text{
+      width:initial;
+    }
+  }
+}
+
+.ant-progress[dark]{
+  .ant-progress-circle-trail{
+      stroke:#374755 !important;
+  }
+}
+.ant-progress[turn="horizontally"]{
+  .ant-progress-circle{
+    transform: rotateY(180deg);
+  }
+}
+
+// divider
+.ant-divider[size="16"]{
+  margin: 16px 0;
+}
+.ant-divider[size="0"]{
+  margin: 0;
+}
+
+// form global
+.ant-form-item-label{
+  margin-right: 8px;
+}
+.ant-form-item-label label::after{
+  display:none;
+}
+.ant-form-item-required::before{
+  display:none;
+}
+
+// form column
+.ant-form[column='2']{
+  width:800px;
+  display: flex;
+  flex-wrap: wrap;
+  >* {
+    width: 40%;
+    &:nth-child(2n-1){
+      padding-right: 24px;
+    }
+    &:nth-child(2n){
+      padding-left: 24px;
+    }
+  }
+  .ant-form-item{
+    display: flex;
+    margin-bottom: 16px;
+    .ant-form-item-label{
+    }
+    
+    // error success tips
+    .ant-form-explain{
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+  }
+  .ant-form-item-control-wrapper{
+    flex:1;
+  }
+  .ant-input,
+  .ant-calendar-picker,
+  .ant-select{
+    width:100%;
+  }
+}
+
+// table
+.ant-table-wrapper{
+  width:100%;
+}
+
+// empty
+.ant-empty{
+  opacity:.5;
+  color:#fff;
+}
