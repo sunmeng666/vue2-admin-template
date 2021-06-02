@@ -17,7 +17,7 @@
         <a class="forget-password">
           忘记密码?
         </a>
-        <a-button class="login-button" type="primary" size="large" block @click="submitForm('ruleForm')">登录</a-button>
+        <a-button class="login-button" type="primary" size="large" block @click="submitForm('ruleForm')">登 录</a-button>
       </a-form-model>
     </div>
   </div>
